@@ -16,7 +16,7 @@ This is because there are better ways of factoring integers quantumly:
 - In [[E21b]](https://doi.org/10.1007/s11128-021-03069-1), it is shown that <i>all</i> prime factors of any integer <img src="https://render.githubusercontent.com/render/math?math=\color{brown}N"> can be found efficiently classically with very high probability given the order <img src="https://render.githubusercontent.com/render/math?math=\color{brown}r"> of an element <img src="https://render.githubusercontent.com/render/math?math=\color{brown}g"> selected uniformly at random from <img src="https://render.githubusercontent.com/render/math?math=\color{brown}\mathbb Z_N^*">.
 This by  using a more involved classical post-processing algorithm that is essentially due to Miller [[Miller76]](https://doi.org/10.1016/S0022-0000(76)80043-8).
 
-   More specifically, a lower bound on the probability of completely factoring <img src="https://render.githubusercontent.com/render/math?math=\color{brown}N"> is given in [[E21b]](https://doi.org/10.1007/s11128-021-03069-1): Asymptotically, in the limit as <img src="https://render.githubusercontent.com/render/math?math=\color{brown}N"> tends to infinity, the lower bound on the success probability tends to one.
+   More specifically, a lower bound on the probability of completely factoring <img src="https://render.githubusercontent.com/render/math?math=\color{brown}N"> is given in [[E21b]](https://doi.org/10.1007/s11128-021-03069-1): Asymptotically, in the limit as <img src="https://render.githubusercontent.com/render/math?math=\color{brown}N"> tends to infinity, the lower bound on the success probability tends to one if properly parameterized.
    Already for moderate <img src="https://render.githubusercontent.com/render/math?math=\color{brown}N">, a very high success probability can be guaranteed.
 
    For a reference implementation of the classical post-processing algorithm, see [this repository](https://github.com/ekera/factoritall).
@@ -124,7 +124,7 @@ More specifically, the <code>sfa_success_probability()</code> function assumes t
 
 4. If <img src="https://render.githubusercontent.com/render/math?math=\color{brown}g^{r / 2} \equiv -1 \:\: (\text{mod } \: N)">, the algorithm fails.
 
-5. Otherwise, the algorithm succeeds, and returns <img src="https://render.githubusercontent.com/render/math?math=\color{brown}d = gcd(g^{r / 2} \pm 1, N)"> as the two non-trivial factors of <img src="https://render.githubusercontent.com/render/math?math=\color{brown}N">.
+5. Otherwise, the algorithm succeeds, and returns <img src="https://render.githubusercontent.com/render/math?math=\color{brown}d = \gcd(g^{r / 2} \pm 1, N)"> as the two non-trivial factors of <img src="https://render.githubusercontent.com/render/math?math=\color{brown}N">.
 
 The <code>sfa_success_probability()</code> function computes the probability of the above algorithm succeeding for a given <img src="https://render.githubusercontent.com/render/math?math=\color{brown}N">; either immediately in step 1, or in step 5, having successfully passed steps 3 and 4.
 
