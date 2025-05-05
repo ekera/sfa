@@ -114,7 +114,7 @@ def sfa_success_probability(N, factors = None, printouts = False):
     if prod([pi^ei for [pi, ei] in factors]) != N:
       raise Exception("Error: The given factorization of N is incorrect.");
 
-  # Extract n,.
+  # Extract n.
   n = len(factors);
 
   # Sanity check n.
