@@ -11,7 +11,7 @@ For further details, see the [license](LICENSE.md).
 
 ## Understanding why these scripts are of limited practical relevance
 In practice, one would not factor integers using Shor's algorithm as originally described in [[Shor94]](https://doi.org/10.1109/SFCS.1994.365700).
-This is because there are better ways of factoring integers quantumly:
+This is because there are better ways to factor integers quantumly:
 
 - In [[E21b]](https://doi.org/10.1007/s11128-021-03069-1), it is shown that <i>all</i> prime factors of any integer $N$ can be found efficiently classically with very high probability given the order $r$ of an element $g$ selected uniformly at random from $\mathbb Z_N^\ast$.
 This by  using a more involved classical post-processing algorithm that is essentially due to Miller [[Miller76]](https://doi.org/10.1016/S0022-0000(76)80043-8).
