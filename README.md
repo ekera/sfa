@@ -21,9 +21,9 @@ This by  using a more involved classical post-processing algorithm that is essen
 
    For a reference implementation of the classical post-processing algorithm, see [this repository](https://github.com/ekera/factoritall).
 
-- In [[E22p]](https://doi.org/10.48550/arXiv.2201.07791), the lower bound in [[E21b]](https://doi.org/10.1007/s11128-021-03069-1) is extended to also encompass the quantum order-finding part of the algorithm, so that only the availability of a fault-tolerant quantum computer has to be assumed.
+- In [[E24]](https://doi.org/10.1145/3655026), the lower bound in [[E21b]](https://doi.org/10.1007/s11128-021-03069-1) is extended to also encompass the quantum order-finding part of the algorithm, so that only the availability of a fault-tolerant quantum computer has to be assumed.
 
-   More specifically, a lower bound on the success probability of first finding the order $r$ of $g$, and of then completely factoring $N$ given $r$, is given in [[E22p]](https://doi.org/10.48550/arXiv.2201.07791): Again, asymptotically in the limit as  $N$ tends to infinity, the lower bound on the success probability tends to one if properly parameterized.
+   More specifically, a lower bound on the success probability of first finding the order $r$ of $g$, and of then completely factoring $N$ given $r$, is given in [[E24]](https://doi.org/10.1145/3655026): Again, asymptotically in the limit as  $N$ tends to infinity, the lower bound on the success probability tends to one if properly parameterized.
    Already for moderate $N$, a high success probability can be guaranteed.
    This conclusively shows that a single run of the quantum part is usually sufficient.
 
@@ -32,7 +32,7 @@ This by  using a more involved classical post-processing algorithm that is essen
 - The above results are for factoring <i>any</i> integer $N$ into all of its prime factors.
 
   An important special class of integers in cryptography are RSA integers $N = pq$ with two large distinct random prime factors $p$, $q$ of similar bit lengths.
-  To factor such integers, it is better to use Ekerå-Håstad's derivative of Shor's algorithm [[EH17]](https://doi.org/10.1007/978-3-319-59879-6_20) with the post-processing in [[E20]](https://doi.org/10.1007/s10623-020-00783-2).
+  To factor such integers, it is better to use Ekerå-Håstad's derivative of Shor's algorithm [[EH17]](https://doi.org/10.1007/978-3-319-59879-6_20) with the post-processing in [[E20]](https://doi.org/10.1007/s10623-020-00783-2) or [[E23p]](https://doi.org/10.48550/arXiv.2309.01754).
   A single run of the quantum part is then also usually sufficient, but this single run imposes less requirements on the quantum computer.
 
 - For earlier works, see also e.g.
@@ -55,7 +55,7 @@ This by  using a more involved classical post-processing algorithm that is essen
   For more comprehensive literature surveys, see e.g.
   [[E21b]](https://doi.org/10.1007/s11128-021-03069-1), Sect. 2,
   and
-  [[E22p]](https://doi.org/10.48550/arXiv.2201.07791), Sect. 1.4–1.5.
+  [[E24]](https://doi.org/10.1145/3655026), Sect. 1.4–1.5.
 
 ## Prerequisites
 To install [Sage](https://www.sagemath.org) under [Ubuntu 20.04 LTS](https://releases.ubuntu.com/20.04), simply execute:
@@ -133,7 +133,7 @@ Failures due to an incorrect order being returned in step 2 are hence not accoun
 
 Note that it is reasonable to assume that $r$ will in general be correctly computed:
 
-See for example Appendix A in [[E20]](https://doi.org/10.1515/jmc-2020-0006) for estimates based on simulations that show that enumerating a limited set of vectors in a lattice will yield the order, or the recent analysis in [[E22p]](https://doi.org/10.48550/arXiv.2201.07791) that yields a lower bound.
+See for example Appendix A in [[E21]](https://doi.org/10.1515/jmc-2020-0006) for estimates based on simulations that show that enumerating a limited set of vectors in a lattice will yield the order, or the recent analysis in [[E24]](https://doi.org/10.1145/3655026) that yields a lower bound.
 
 ### Test suites
 To test the [main script](sfa-success-probability.sage), attach the [test script](sfa-success-probability-test.sage) and call <code>test_sfa_success_probability()</code>.
