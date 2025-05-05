@@ -31,31 +31,31 @@ This by  using a more involved classical post-processing algorithm that is essen
 
 - The above results are for factoring <i>any</i> integer $N$ into all of its prime factors.
 
-  An important special class of integers in cryptography are RSA integers $N = pq$ with two large distinct random prime factors $p$, $q$ of similar bit lengths.
-  To factor such integers, it is better to use Ekerå-Håstad's derivative of Shor's algorithm [[EH17]](https://doi.org/10.1007/978-3-319-59879-6_20) with the post-processing in [[E20]](https://doi.org/10.1007/s10623-020-00783-2) or [[E23p]](https://doi.org/10.48550/arXiv.2309.01754).
-  A single run of the quantum part is then also usually sufficient, but this single run imposes less requirements on the quantum computer.
+   An important special class of integers in cryptography are RSA integers $N = pq$ with two large distinct random prime factors $p$, $q$ of similar bit lengths.
+   To factor such integers, it is better to use Ekerå-Håstad's derivative of Shor's algorithm [[EH17]](https://doi.org/10.1007/978-3-319-59879-6_20) with the post-processing in [[E20]](https://doi.org/10.1007/s10623-020-00783-2) or [[E23p]](https://doi.org/10.48550/arXiv.2309.01754).
+   A single run of the quantum part is then also usually sufficient, but this single run imposes less requirements on the quantum computer.
 
 - For earlier works, see also e.g.
-  [Knill95],
-  [[McAnally01]](https://doi.org/10.48550/arXiv.quant-ph/0112055),
-  [[Seifert01]](https://doi.org/10.1007/3-540-45353-9_24),
-  [[Leander02]](https://doi.org/10.48550/arXiv.quant-ph/0208183),
-  [[Gerjuoy05]](https://doi.org/10.1119/1.1891170),
-  [[BW07]](https://doi.org/10.26421/QIC7.5-6-7),
-  [[M-L+12]](https://doi.org/10.1038/nphoton.2012.259),
-  [[Lawson15]](https://doi.org/10.1007/s11128-014-0910-z),
-  [[GLMS15]](https://doi.org/10.48550/arXiv.1511.04385) and
-  [[MRS18]](https://doi.org/10.48550/arXiv.1802.08444),
-  along with e.g.
-  [[Pollard74]](https://doi.org/10.1017/S0305004100049252),
-  [[Miller76]](https://doi.org/10.1016/S0022-0000(76)80043-8),
-  [[Rabin80]](https://doi.org/10.1016/0022-314X(80)90084-0) and
-  [Long].
+   [Knill95],
+   [[McAnally01]](https://doi.org/10.48550/arXiv.quant-ph/0112055),
+   [[Seifert01]](https://doi.org/10.1007/3-540-45353-9_24),
+   [[Leander02]](https://doi.org/10.48550/arXiv.quant-ph/0208183),
+   [[Gerjuoy05]](https://doi.org/10.1119/1.1891170),
+   [[BW07]](https://doi.org/10.26421/QIC7.5-6-7),
+   [[M-L+12]](https://doi.org/10.1038/nphoton.2012.259),
+   [[Lawson15]](https://doi.org/10.1007/s11128-014-0910-z),
+   [[GLMS15]](https://doi.org/10.48550/arXiv.1511.04385) and
+   [[MRS18]](https://doi.org/10.48550/arXiv.1802.08444),
+   along with e.g.
+   [[Pollard74]](https://doi.org/10.1017/S0305004100049252),
+   [[Miller76]](https://doi.org/10.1016/S0022-0000(76)80043-8),
+   [[Rabin80]](https://doi.org/10.1016/0022-314X(80)90084-0) and
+   [Long].
 
-  For more comprehensive literature surveys, see e.g.
-  [[E21b]](https://doi.org/10.1007/s11128-021-03069-1), Sect. 2,
-  and
-  [[E24]](https://doi.org/10.1145/3655026), Sect. 1.4–1.5.
+   For more comprehensive literature surveys, see e.g.
+   [[E21b]](https://doi.org/10.1007/s11128-021-03069-1), Sect. 2,
+   and
+   [[E24]](https://doi.org/10.1145/3655026), Sect. 1.4–1.5.
 
 ## Prerequisites
 To install [Sage](https://www.sagemath.org) under [Ubuntu 20.04 LTS](https://releases.ubuntu.com/20.04), simply execute:
@@ -229,7 +229,6 @@ To understand how the script works, let us consider each step in <a href="#Assum
      $r_i$
      such that
      $t_i = 0, 1, \ldots, \kappa_i$.
-
 
 3. If $r$ is odd, the algorithm fails in step 3.
 
