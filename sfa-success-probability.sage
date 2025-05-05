@@ -34,10 +34,10 @@
 # reaching step 5 is computed.
 #
 # Note that it is reasonable to assume that the order will in general be
-# correctly computed. (See e.g. [E22p] and Appendix A to [E20].)
+# correctly computed. (See e.g. [E24] and Appendix A to [E20].)
 #
 # Note furthermore that there are more efficient methods of post-processing the
-# order r returned by the order finding algorithm (See e.g. [E21b] and [E22p].)
+# order r returned by the order finding algorithm (See e.g. [E21b] and [E24].)
 #
 # This script is provided only to answer commonly posed questions regarding the
 # success probability of Shor's original factoring algorithm; not to propose
@@ -75,9 +75,9 @@
 #            Quantum Inf. Process 20:205 (2021).
 #            https://doi.org/10.1007/s11128-021-03069-1
 #
-#  [E22p]    Ekerå, M.: On the success probability of quantum order finding.
-#            ArXiv pre-print (2201.07791), (2022).
-#            https://doi.org/10.48550/arXiv.2201.07791
+#  [E24]     Ekerå, M.: On the success probability of quantum order finding.
+#            ACM Trans. Quantum Comput. 5(2):11 (2024).
+#            https://doi.org/10.1145/3655026
 #
 #  [Shor94]  Shor, P.W.: Algorithms for Quantum Computation: Discrete Logarithms
 #            and Factoring. In: SFCS, Proceedings of the 35th Annual Symposium
