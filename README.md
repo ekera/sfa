@@ -27,7 +27,7 @@ This by  using a more involved classical post-processing algorithm that is essen
    Already for moderate $N$, a high success probability can be guaranteed.
    This conclusively shows that a single run of the quantum part is usually sufficient.
 
-   This fact may also be seen in simulations, such as those in Appendix A of [[E21]](https://doi.org/10.1515/jmc-2020-0006).
+   This fact may also be seen in simulations, such as those in App. A of [[E21]](https://doi.org/10.1515/jmc-2020-0006).
 
 - The above results are for factoring <i>any</i> integer $N$ into all of its prime factors.
 
@@ -53,9 +53,9 @@ This by  using a more involved classical post-processing algorithm that is essen
   [Long].
 
   For more comprehensive literature surveys, see e.g.
-  [[E21b]](https://doi.org/10.1007/s11128-021-03069-1), Sect. 2,
+  [[E21b]](https://doi.org/10.1007/s11128-021-03069-1), Sect. 2,
   and
-  [[E24]](https://doi.org/10.1145/3655026), Sect. 1.4–1.5.
+  [[E24]](https://doi.org/10.1145/3655026), Sect. 1.4–1.5.
 
 ## Prerequisites
 To install [Sage](https://www.sagemath.org) under [Ubuntu 20.04 LTS](https://releases.ubuntu.com/20.04), simply execute:
@@ -133,7 +133,7 @@ Failures due to an incorrect order being returned in step 2 are hence not accoun
 
 Note that it is reasonable to assume that $r$ will in general be correctly computed:
 
-See for example Appendix A in [[E21]](https://doi.org/10.1515/jmc-2020-0006) for estimates based on simulations that show that enumerating a limited set of vectors in a lattice will yield the order, or the recent analysis in [[E24]](https://doi.org/10.1145/3655026) that yields a lower bound.
+See for example App. A in [[E21]](https://doi.org/10.1515/jmc-2020-0006) for estimates based on simulations that show that enumerating a limited set of vectors in a lattice will yield the order, or the recent analysis in [[E24]](https://doi.org/10.1145/3655026) that yields a lower bound.
 
 ### Test suites
 To test the [main script](sfa-success-probability.sage), attach the [test script](sfa-success-probability-test.sage) and call <code>test_sfa_success_probability()</code>.
