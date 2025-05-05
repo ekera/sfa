@@ -34,7 +34,7 @@
 # reaching step 5 is computed.
 #
 # Note that it is reasonable to assume that the order will in general be
-# correctly computed. (See e.g. [E24] and Appendix A to [E20].)
+# correctly computed. (See e.g. [E24] and App. A to [E20].)
 #
 # Note furthermore that there are more efficient methods of post-processing the
 # order r returned by the order finding algorithm (See e.g. [E21b] and [E24].)
