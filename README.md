@@ -139,7 +139,7 @@ See for example App. A in [[E21]](https://doi.org/10.1515/jmc-2020-0006) for es
 To test the [main script](sfa-success-probability.sage), attach the [test script](sfa-success-probability-test.sage) and call <code>test_sfa_success_probability()</code>.
 
 The <code>test_sfa_success_probability()</code> function tests that the success probability is correctly computed for
-- all positive odd integers $N < 10^4$">$ that are not perfect prime powers, and
+- all positive odd integers $N < 10^4$ that are not perfect prime powers, and
 - ten integers $N$ selected uniformly at random from $[10^6, 2 \cdot 10^6)$, again with the constraints that $N$ must be odd and not a perfect prime power.
 
 To check that the values yielded by the <code>sfa_success_probability()</code> function are correct, the test function <code>test_sfa_success_probability()</code> performs an exhaustive search over all integers $g$ in $[1, N)$ to count the number of $g$ for which $N$ is successfully factored by <a href="#Assumptions">the above algorithm</a>.
